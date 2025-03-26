@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список фильмов</title>
+</head>
+<body>
+    <ul>
+        {% for movie in movie_list %}
+            <li><strong>{{ movie.title }}</strong></li>
+            <li>{{ movie.description }}</li>
+            <li>{{ movie.year }}</li>
+            <li>{{ movie.country }}</li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
